@@ -1,7 +1,15 @@
 [package]
 name = "email-newsletter"
 version = "0.1.0"
+authors=["dbg-opn <dbg-opn-secret-email@email.com>"]
 edition = "2024"
+
+[lib]
+path="src/lib.rs"
+
+[[bin]]
+path="src/main.rs"
+name="email-newsletter"
 
 [dependencies]
 actix-web = "4"
