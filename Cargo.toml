@@ -15,5 +15,8 @@ name="email-newsletter"
 actix-web = "4"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 
+[dev-dependencies]
+reqwest="0.12"
+
 #[target.aarch64-apple-darwin]
 #rustflags=["-C","link-arg=-fuse-ld=/opt/homebrew/llvm/bin/ld64.lld"]
