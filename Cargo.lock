@@ -442,7 +442,9 @@ name = "email-newsletter"
 version = "0.1.0"
 dependencies = [
  "actix-web",
+ "log",
  "reqwest",
+ "serde",
  "tokio",
 ]
 

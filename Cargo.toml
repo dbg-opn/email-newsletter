@@ -1,22 +1,24 @@
 [package]
 name = "email-newsletter"
 version = "0.1.0"
-authors=["dbg-opn <dbg-opn-secret-email@email.com>"]
+authors = ["dbg-opn <dbg-opn-secret-email@email.com>"]
 edition = "2024"
 
 [lib]
-path="src/lib.rs"
+path = "src/lib.rs"
 
 [[bin]]
-path="src/main.rs"
-name="email-newsletter"
+path = "src/main.rs"
+name = "email-newsletter"
 
 [dependencies]
 actix-web = "4"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+log = "0.4.27"
+serde = { version = "1", features = ["derive"] }
 
 [dev-dependencies]
-reqwest="0.12"
+reqwest = "0.12"
 
 #[target.aarch64-apple-darwin]
 #rustflags=["-C","link-arg=-fuse-ld=/opt/homebrew/llvm/bin/ld64.lld"]
